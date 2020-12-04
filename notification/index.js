@@ -29,7 +29,7 @@ function notifyMe() {
 
 function notification() {
   const options = {
-    body: "Test test",
+    body: "Hello world",
   };
-  swRegistration.showNotification("Test", options);
+  swRegistration.showNotification("Hello world", options);
 }
