@@ -7,10 +7,30 @@
     <title>My Awesome Website</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="manifest" href="./manifest.json" />
-    <meta name="theme-color" content="purple">
+    <meta name="theme-color" content="purple" />
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+    />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="ui two column grid container">
+      <div class="column">
+        <input hidden type="file" class="upload-input" aria-label="Upload image" name="upload_image" accept="image/*" />
+        <button type="button" class="ui button upload-btn"><i class="upload icon"></i></button>
+      </div>
+      <div class="column">
+        <div class="ui small image">
+          <img src="./image.png" class="image" />
+        </div>
+      </div>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
